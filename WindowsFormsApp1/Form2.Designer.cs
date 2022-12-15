@@ -70,7 +70,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.buttonEntrarSenha);
             this.Name = "Form2";
             this.Text = "Pousada Betania Gramado";
-            this.ResumeLayout(false);
+                     this.ResumeLayout(false);
             this.PerformLayout();
 
         }

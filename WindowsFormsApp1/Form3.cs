@@ -12,10 +12,8 @@ using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1
 {
-
     public partial class Form3 : Form
     {
-
         DateTime data3;
         DateTime data4;
         MySqlConnection objcon;
@@ -39,7 +37,6 @@ namespace WindowsFormsApp1
             listView1.Columns.Add("valor_quintuplo", 100, HorizontalAlignment.Left);
             listView1.Columns.Add("Crianca03A06", 120, HorizontalAlignment.Left);
             listView1.Columns.Add("Crianca07A10", 120, HorizontalAlignment.Left);
-
         }
         private void load_Click(object sender, EventArgs e)
         {
@@ -107,7 +104,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show(ex.Message);
             }
         }
-
         private void buttonInserir_Click(object sender, EventArgs e)
         {
             try
@@ -126,7 +122,6 @@ namespace WindowsFormsApp1
                     var updateValores = new Valores()
                     {
                         Data = dateTimePickerInserir.Value.Date,
-
                         TotalCasal = Convert.ToDouble(txtCasal.Text),
                         TotalSolteiro = Convert.ToDouble(txtSolteiro.Text),
                         TotalTriplo = Convert.ToDouble(txtTriplo.Text),
@@ -140,7 +135,6 @@ namespace WindowsFormsApp1
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
-
         private void listView1_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
         {
             ListView.SelectedListViewItemCollection itens_selecionados = listView1.SelectedItems;
@@ -157,12 +151,9 @@ namespace WindowsFormsApp1
                 txt07A10Anos.Text = item.SubItems[7].Text;
             }
         }
-
         private void buttonDeletar_Click(object sender, EventArgs e)
         {
             DateTime diaADeletar = dateTimePickerInserir.Value.Date;
-
-
             string message = "Do you want to Delete?";
             string title = "Delete Action";
             MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -170,13 +161,7 @@ namespace WindowsFormsApp1
             if (result == DialogResult.Yes)
             {
                 repositoryValores.DeletarDiaNoDataBase(diaADeletar);
-
             }
-
-
         }
     }
-
-
-
 }

@@ -329,7 +329,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.listView1);
             this.Name = "Form3";
             this.Text = "Pousada Betania Gramado";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+                 ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

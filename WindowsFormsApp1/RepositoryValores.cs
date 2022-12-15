@@ -13,8 +13,6 @@ namespace WindowsFormsApp1
     {
         MySqlConnection objcon;
         MySqlCommand cmd;
-
-
         public RepositoryValores()
         {
             try
@@ -29,9 +27,7 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show("nao conectou" + error);
             }
-
         }
-
         public void VerifyIfconnectedToDataBase()
         {
             try
@@ -40,14 +36,13 @@ namespace WindowsFormsApp1
                 objcon = new MySqlConnection("server=localhost;port=3307;User Id=root;database=pousadabetania;Allow User Variables=True");
                 objcon.Open();
                 MessageBox.Show("conectado");
-                
+
             }
             catch (Exception error)
             {
                 MessageBox.Show("nao conectou" + error);
             }
         }
-
         public Valores ConsultarSomaDosValores(DateTime data1, DateTime data2)
         {
             cmd = new MySqlCommand("SELECT sum(valor_casal) TotalCasal,sum(valor_solteiro) TotalSolteiro,sum(valor_triplo) TotalTriplo," +
@@ -64,7 +59,6 @@ namespace WindowsFormsApp1
             reader.Read();
             var valores = new Valores()
             {
-
                 TotalCasal = reader.GetFieldValue<double>(reader.GetOrdinal("TotalCasal")),
                 TotalSolteiro = reader.GetFieldValue<double>(reader.GetOrdinal("TotalSolteiro")),
                 TotalTriplo = reader.GetFieldValue<double>(reader.GetOrdinal("TotalTriplo")),
@@ -75,10 +69,7 @@ namespace WindowsFormsApp1
             };
             reader.Close();
             return valores;
-
         }
-
-
         public Valores carregarValoresParaCrud(DateTime data)
         {
             cmd = new MySqlCommand("select(select count(*) from valores where data = @data)as numero_linhas");
@@ -89,23 +80,16 @@ namespace WindowsFormsApp1
 
             if (resultado == 0)
             { return null; }
-
-
             cmd.CommandText = "SELECT data data, sum(valor_casal)TotalCasal, sum(valor_solteiro)TotalSolteiro, sum(valor_triplo)TotalTriplo," +
-                          " sum(valor_quadruplo)TotalQuadruplo, sum(valor_quintuplo)TotalQuintuplo, sum(valor_criancaDe03A06)TotalCrianca03A06," +
-                        "sum(valor_criancaDe07A10)TotalCrianca07A10  FROM valores where data = @data";
+  " sum(valor_quadruplo)TotalQuadruplo, sum(valor_quintuplo)TotalQuintuplo, sum(valor_criancaDe03A06)TotalCrianca03A06," +
+"sum(valor_criancaDe07A10)TotalCrianca07A10  FROM valores where data = @data";
             cmd.Parameters.Clear();
             cmd.Parameters.AddWithValue("@data", data.ToString("yyyy-MM-dd HH:mm:ss"));
-
             //executa o comando
             cmd.CommandType = CommandType.Text;
             MySqlDataReader reader;
             reader = cmd.ExecuteReader();
-
-
-
             reader.Read();
-
             var valores = new Valores()
             {
                 Data = reader.GetFieldValue<DateTime>(reader.GetOrdinal("data")),
@@ -119,9 +103,6 @@ namespace WindowsFormsApp1
             };
             reader.Close();
             return valores;
-
-
-
         }
         public void UpdateValoresNoDataBase(Valores Valores)
         {
@@ -141,16 +122,10 @@ namespace WindowsFormsApp1
                 cmd.Parameters.AddWithValue("@quintuplo", Valores.TotalQuintuplo);
                 cmd.Parameters.AddWithValue("@03A06", Valores.TotalCrianca03A06);
                 cmd.Parameters.AddWithValue("@07a10", Valores.TotalCrianca07A10);
-
-                //executa o comando
-
-
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("alterado com sucesso! Clique em load para ver as mudanças!");
             }
             else { MessageBox.Show("Dia nao existe no banco!"); }
-
-
         }
 
         public void InserirValoresNoDataBase(Valores Valores)
@@ -179,7 +154,6 @@ namespace WindowsFormsApp1
             }
             else { MessageBox.Show("dia ja existe no banco!"); }
         }
-
         public void DeletarDiaNoDataBase(DateTime diaADeletar)
         {
             cmd = new MySqlCommand("select(select count(*) from valores where data = @data)as numero_linhas");
@@ -194,7 +168,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Deletado com sucesso! Clique em load para ver as mudanças!");
             }
             else { MessageBox.Show("Dia nao existe no banco para ser deletado!"); }
-
         }
         public Boolean VerificarSeExisteDiaNoBanco(DateTime data1, DateTime data2)
         {
@@ -204,11 +177,9 @@ namespace WindowsFormsApp1
             cmd.Connection = objcon;
             int data1ExisteNoBanco = Convert.ToInt32(cmd.ExecuteScalar());
             cmd.CommandText = "select(select count(*) from valores where data = @data2)as total_linhas";
-
             int data2ExisteNoBanco = Convert.ToInt32(cmd.ExecuteScalar());
 
             if (data1ExisteNoBanco == 0 || data2ExisteNoBanco == 0)
-
             {
                 return false;
             }
