@@ -463,6 +463,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.IMGpousadaBetania);
             this.Name = "Form1";
             this.Text = "Pousada Betania Gramado";
+        
             ((System.ComponentModel.ISupportInitialize)(this.IMGpousadaBetania)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

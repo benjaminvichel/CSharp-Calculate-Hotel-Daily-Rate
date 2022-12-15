@@ -40,7 +40,7 @@ namespace WindowsFormsApp1
                 objcon = new MySqlConnection("server=localhost;port=3307;User Id=root;database=pousadabetania;Allow User Variables=True");
                 objcon.Open();
                 MessageBox.Show("conectado");
-                objcon.Close();
+                
             }
             catch (Exception error)
             {
