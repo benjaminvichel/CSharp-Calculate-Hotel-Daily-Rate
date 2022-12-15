@@ -1,0 +1,17 @@
+INTRODUCTION:
+
+Hello! Thanks for reading my project!
+
+The idea of this project is to calculate the value of the daily rate for a specific schadule's  range. I use Mysql to store all the daily expenses prices.
+The program also have CRUD so you do not have to make any changes when using MySql interface. 
+
+This is my very first program, that I created in order to help my parents' hotel.
+If you find any bugs or have sugestions, please give me a feedback in my e-mail adress: benni.vichel@hotmail.com
+
+Thanks again!
+
+
+TO KNOW:
+
+Password to acess CRUD = "nathanota10";
+
