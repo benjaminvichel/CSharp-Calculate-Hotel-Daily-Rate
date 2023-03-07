@@ -84,7 +84,7 @@ namespace WindowsFormsApp1
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(23, 37);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2023, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2099, 12, 31, 0, 0, 0, 0);
             this.dateTimePicker1.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 20);
@@ -463,7 +463,6 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.IMGpousadaBetania);
             this.Name = "Form1";
             this.Text = "Pousada Betania Gramado";
-        
             ((System.ComponentModel.ISupportInitialize)(this.IMGpousadaBetania)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

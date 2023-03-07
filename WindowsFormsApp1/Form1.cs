@@ -82,7 +82,5 @@ namespace WindowsFormsApp1
             novaform2.Show();
             repositoryValores.VerifyIfconnectedToDataBase();
         }
-
-      
     }
 }
