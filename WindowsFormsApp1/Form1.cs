@@ -64,6 +64,10 @@ namespace WindowsFormsApp1
                 double somaValorSolteirosCustom = quantidadeSolteirosCustom * valores.TotalSolteiro;
                 //calcula valor total do custom
                 double valorTotal = (valores.TotalCasal + somaValorSolteirosCustom + somaValorCrianca03A06 + somaValorCrianca07A10);
+                //imprime valor diaria quarto casal Luxo
+                textValorDiariaCasalLuxo.Text = ((0.15 * valores.TotalCasal + valores.TotalCasal) / interval.Days).ToString("c");
+                //imprime valor total casal luxo
+                textValorTotalCasalLuxo.Text = (0.15 * valores.TotalCasal + valores.TotalCasal).ToString("c");
                 //imprime valor da diaria custom
                 textValorDiariaCustom.Text = (valorTotal / interval.Days).ToString("c");
                 //imprime valor total custom

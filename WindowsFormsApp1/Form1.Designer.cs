@@ -50,6 +50,7 @@ namespace WindowsFormsApp1
             this.textCrianca07A10 = new System.Windows.Forms.TextBox();
             this.textCrianca03A06 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.textValorDiariaCasal = new System.Windows.Forms.TextBox();
@@ -74,6 +75,8 @@ namespace WindowsFormsApp1
             this.btnEditar = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textValorDiariaCasalLuxo = new System.Windows.Forms.TextBox();
+            this.textValorTotalCasalLuxo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.IMGpousadaBetania)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -234,6 +237,9 @@ namespace WindowsFormsApp1
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textValorTotalCasalLuxo);
+            this.groupBox2.Controls.Add(this.textValorDiariaCasalLuxo);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.textValorDiariaCasal);
@@ -253,10 +259,19 @@ namespace WindowsFormsApp1
             this.groupBox2.Controls.Add(this.textValorTotalCasal);
             this.groupBox2.Location = new System.Drawing.Point(3, 332);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(312, 177);
+            this.groupBox2.Size = new System.Drawing.Size(312, 215);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Valores";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Casal - Luxo";
             // 
             // label17
             // 
@@ -285,7 +300,7 @@ namespace WindowsFormsApp1
             // 
             // textValorDiariaSolteiro
             // 
-            this.textValorDiariaSolteiro.Location = new System.Drawing.Point(103, 67);
+            this.textValorDiariaSolteiro.Location = new System.Drawing.Point(103, 96);
             this.textValorDiariaSolteiro.Name = "textValorDiariaSolteiro";
             this.textValorDiariaSolteiro.Size = new System.Drawing.Size(84, 20);
             this.textValorDiariaSolteiro.TabIndex = 26;
@@ -293,7 +308,7 @@ namespace WindowsFormsApp1
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(13, 147);
+            this.label14.Location = new System.Drawing.Point(13, 176);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(52, 13);
             this.label14.TabIndex = 24;
@@ -301,7 +316,7 @@ namespace WindowsFormsApp1
             // 
             // textValorDiariaTriplo
             // 
-            this.textValorDiariaTriplo.Location = new System.Drawing.Point(103, 91);
+            this.textValorDiariaTriplo.Location = new System.Drawing.Point(103, 120);
             this.textValorDiariaTriplo.Name = "textValorDiariaTriplo";
             this.textValorDiariaTriplo.Size = new System.Drawing.Size(84, 20);
             this.textValorDiariaTriplo.TabIndex = 27;
@@ -309,7 +324,7 @@ namespace WindowsFormsApp1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(13, 121);
+            this.label13.Location = new System.Drawing.Point(13, 150);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(56, 13);
             this.label13.TabIndex = 23;
@@ -317,7 +332,7 @@ namespace WindowsFormsApp1
             // 
             // textValorDiariaQuadruplo
             // 
-            this.textValorDiariaQuadruplo.Location = new System.Drawing.Point(103, 117);
+            this.textValorDiariaQuadruplo.Location = new System.Drawing.Point(103, 146);
             this.textValorDiariaQuadruplo.Name = "textValorDiariaQuadruplo";
             this.textValorDiariaQuadruplo.Size = new System.Drawing.Size(84, 20);
             this.textValorDiariaQuadruplo.TabIndex = 28;
@@ -325,7 +340,7 @@ namespace WindowsFormsApp1
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(13, 95);
+            this.label12.Location = new System.Drawing.Point(13, 124);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(33, 13);
             this.label12.TabIndex = 22;
@@ -333,7 +348,7 @@ namespace WindowsFormsApp1
             // 
             // textValorDiariaQuintuplo
             // 
-            this.textValorDiariaQuintuplo.Location = new System.Drawing.Point(103, 143);
+            this.textValorDiariaQuintuplo.Location = new System.Drawing.Point(103, 172);
             this.textValorDiariaQuintuplo.Name = "textValorDiariaQuintuplo";
             this.textValorDiariaQuintuplo.Size = new System.Drawing.Size(84, 20);
             this.textValorDiariaQuintuplo.TabIndex = 29;
@@ -341,7 +356,7 @@ namespace WindowsFormsApp1
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(13, 69);
+            this.label10.Location = new System.Drawing.Point(13, 98);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(42, 13);
             this.label10.TabIndex = 21;
@@ -358,28 +373,28 @@ namespace WindowsFormsApp1
             // 
             // textValorTotalQuintuplo
             // 
-            this.textValorTotalQuintuplo.Location = new System.Drawing.Point(193, 144);
+            this.textValorTotalQuintuplo.Location = new System.Drawing.Point(193, 173);
             this.textValorTotalQuintuplo.Name = "textValorTotalQuintuplo";
             this.textValorTotalQuintuplo.Size = new System.Drawing.Size(84, 20);
             this.textValorTotalQuintuplo.TabIndex = 18;
             // 
             // textValorTotalQuadruplo
             // 
-            this.textValorTotalQuadruplo.Location = new System.Drawing.Point(193, 118);
+            this.textValorTotalQuadruplo.Location = new System.Drawing.Point(193, 147);
             this.textValorTotalQuadruplo.Name = "textValorTotalQuadruplo";
             this.textValorTotalQuadruplo.Size = new System.Drawing.Size(84, 20);
             this.textValorTotalQuadruplo.TabIndex = 17;
             // 
             // textValorTotalSolteiro
             // 
-            this.textValorTotalSolteiro.Location = new System.Drawing.Point(193, 67);
+            this.textValorTotalSolteiro.Location = new System.Drawing.Point(193, 96);
             this.textValorTotalSolteiro.Name = "textValorTotalSolteiro";
             this.textValorTotalSolteiro.Size = new System.Drawing.Size(84, 20);
             this.textValorTotalSolteiro.TabIndex = 16;
             // 
             // textValorTotalTriplo
             // 
-            this.textValorTotalTriplo.Location = new System.Drawing.Point(193, 92);
+            this.textValorTotalTriplo.Location = new System.Drawing.Point(193, 121);
             this.textValorTotalTriplo.Name = "textValorTotalTriplo";
             this.textValorTotalTriplo.Size = new System.Drawing.Size(84, 20);
             this.textValorTotalTriplo.TabIndex = 15;
@@ -451,10 +466,24 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 3;
             this.label1.Text = "até";
             // 
+            // textValorDiariaCasalLuxo
+            // 
+            this.textValorDiariaCasalLuxo.Location = new System.Drawing.Point(103, 69);
+            this.textValorDiariaCasalLuxo.Name = "textValorDiariaCasalLuxo";
+            this.textValorDiariaCasalLuxo.Size = new System.Drawing.Size(84, 20);
+            this.textValorDiariaCasalLuxo.TabIndex = 33;
+            // 
+            // textValorTotalCasalLuxo
+            // 
+            this.textValorTotalCasalLuxo.Location = new System.Drawing.Point(193, 69);
+            this.textValorTotalCasalLuxo.Name = "textValorTotalCasalLuxo";
+            this.textValorTotalCasalLuxo.Size = new System.Drawing.Size(84, 20);
+            this.textValorTotalCasalLuxo.TabIndex = 34;
+            // 
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(787, 518);
+            this.ClientSize = new System.Drawing.Size(787, 559);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.groupBox3);
@@ -522,6 +551,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textValorTotalCasalLuxo;
+        private System.Windows.Forms.TextBox textValorDiariaCasalLuxo;
     }
 }
 
