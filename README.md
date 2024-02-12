@@ -70,3 +70,13 @@ The end customer will choose a start date and an end date in the program.</p>
 
 ![](gifs/4.gif)
 
+# To Know
+
+![image](https://github.com/benjaminvichel/CSharp-Calculate-Hotel-Daily-Rate/assets/84679587/44165365-d52c-4f1e-a8aa-9ab0062e41f1)
+
+<p>Microsoft Visual Stiudio Community 2019</p>
+<p>version 16.11.33</p>
+<p>Microsoft .NET Framework</p>
+<p>Version 4.8.09037</p>
+<p>WampServer-3.3.2</p>
+
