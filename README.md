@@ -6,7 +6,7 @@ Hello! Thanks for reading my project!
 <p>The idea of this project is to calculate the value of the daily rate for a specific schadule's range. I use Mysql to store all the daily expenses prices.</p>
 <p>The program also have CRUD so you do not have to make any changes using MySql interface.</p>
 <p>This is my very first program, that I created in order to help my parents' hotel.</p>
-<p>If you find any bugs or have sugestions, please give me a feedback in my e-mail adress: benni.vichel@hotmail.com
+<p>If you find any bugs or have sugestions, please give me a feedback in my e-mail adress: benni.vichel@hotmail.com.
 </p>
 <p>Thanks again!</p>
 
@@ -28,15 +28,18 @@ The end customer will choose a start date and an end date in the program.</p>
 
 ![section 1](images/section%201.png)
 
-<p>In this section, we have the attributes:</p>
-<p>double room</p>
-<p>luxury double room</p>
-<p>single value</p>
-<p>triple room</p>
-<p>quadruple room</p>
-<p>quintuple room</p>
+<p>In this section, we have:</p>
+<p>🛌 Casal (Double room)</p>
+<p>🛌 Casal - Luxo (Luxury double room)</p>
+<p>🛌 Solteiro (Single value)</p>
+<p>🛌Triplo (Triple room)</p>
+<p>🛌Quadruplo (Quadruple room)</p>
+<p>🛌Quintuplo (Quintuple room)</p>
 
-<p>The "single value" is not the value for a room with single bed, but it's the value the program uses to calculate the cost for the triple,quadruple and quintuple rooms</p>
+<p>We also have 2 columns: Diária (daily) and Total (total)</p>
+<p>Diária (daily) is the daily rate. calculated by dividing the total daily rate by the number of days.</p>
+<p>Total (total) is the total price.</p>
+<p>The "single value" is not the value for a room with single bed, but it's the value the program uses to calculate the cost for the triple,quadruple and quintuple rooms.</p>
 
 <p style="font-size: 25px;">Example:</p>
 
