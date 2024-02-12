@@ -16,11 +16,17 @@ Hello! Thanks for reading my project!
 The end customer will choose a start date and an end date in the program.</p>
 <p>The program will fetch the values ​​on the specified date and return them to the customer's screen.</p>
 
+![](gifs/1.gif)
+
+![](gifs/2.gif)
+
+<p></p>
+
 ## Sections
 
  ### Section 1 (valores)
 
-![section 1](https://github.com/benjaminvichel/CSharp-Calculate-Hotel-Daily-Rate/assets/84679587/05af85bc-47ae-4e22-892f-5dbdb66a7a59)
+![section 1](images/section%201.png)
 
 <p>In this section, we have the attributes:</p>
 <p>double room</p>
@@ -53,5 +59,11 @@ The end customer will choose a start date and an end date in the program.</p>
 
 ![section 3](images/section%203.png)
 
-<p></p>
+#CRUD
+<p>Edit your values using CRUD</p>
+<p>Password: nathanota10</p>
+
+![](gifs/3.gif)
+
+![](gifs/4.gif)
 
