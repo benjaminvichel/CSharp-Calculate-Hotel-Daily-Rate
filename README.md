@@ -57,6 +57,8 @@ The end customer will choose a start date and an end date in the program.</p>
 <p>Add the amount in each field and click the calculate daily rate button(calcular diárias).</p>
 <p>The base value in section 2 will always be the value of the double room.</p>
 
+![](gifs/2.gif)
+
 ### Section 3 (Quarto customizado)
 <p>In section 3 the calculated number of daily rates will be shown</p>
 
