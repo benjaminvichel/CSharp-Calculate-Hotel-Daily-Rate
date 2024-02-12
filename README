@@ -20,7 +20,7 @@ The end customer will choose a start date and an end date in the program.</p>
 
  ### Section 1 (valores)
 
-![section 1](https://github.com/benjaminvichel/CSharp-Calculate-Hotel-Daily-Rate/blob/master/section%201.png)
+![](images/section%201.png)
 
 <p>In this section, we have the attributes:</p>
 <p>double room</p>
@@ -34,7 +34,7 @@ The end customer will choose a start date and an end date in the program.</p>
 
 <p style="font-size: 25px;">Example:</p>
 
-![example](https://github.com/benjaminvichel/CSharp-Calculate-Hotel-Daily-Rate/blob/master/example.png)
+![example](images/example.png)
 
 <p>In the image the double room value is R$ 420,00. Adding the "single value(solteiro)" with the "double room value(casal)" we get the "triple room value(triplo)".</p>
 <p>double room (420,00)+ single value(100,00) = triple room (520,00).</p>
@@ -43,7 +43,7 @@ The end customer will choose a start date and an end date in the program.</p>
 ### Section 2 (Quarto customizado)
 <p>In section 1 we only have room prices for guests over 10 years old. To find out the value of, for example, a triple room with a couple and a child, we use section 2.</p>
 
-![section 2](https://github.com/benjaminvichel/CSharp-Calculate-Hotel-Daily-Rate/blob/master/section%202.png)
+![section 2](images/section%202.png)
 
 <p>Add the amount in each field and click the calculate daily rate button(calcular diárias).</p>
 <p>The base value in section 2 will always be the value of the double room.</p>
@@ -51,7 +51,7 @@ The end customer will choose a start date and an end date in the program.</p>
 ### Section 3 (Quarto customizado)
 <p>In section 3 the calculated number of daily rates will be shown</p>
 
-![section 3](https://github.com/benjaminvichel/CSharp-Calculate-Hotel-Daily-Rate/blob/master/section%203.png)
+![section 3](images/section%203.png)
 
 <p></p>
 
