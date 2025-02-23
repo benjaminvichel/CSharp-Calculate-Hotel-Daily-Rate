@@ -4,11 +4,9 @@ Hello! Thanks for reading my project!
 </h3>
 
 <p>The idea of this project is to calculate the value of the daily rate for a specific schadule's range. I use Mysql to store all the daily expenses prices.</p>
-<p>The program also have CRUD so you do not have to make any changes using MySql interface.</p>
-<p>This is my very first program, that I created in order to help my parents' hotel.</p>
 <p>If you find any bugs or have sugestions, please give me a feedback in my e-mail adress: benni.vichel@hotmail.com.
 </p>
-<p>Thanks again!</p>
+<p>Thanks!</p>
 
 # How it Works
 
